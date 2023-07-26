@@ -6,109 +6,224 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Dreamcatcher's MongMong Cursor</title>
+     <link rel="stylesheet" href="css/index.css">
 </head>
-
-<style>
-
-     .default         { cursor: default; }
-     .help            { cursor: help; }
-     .pointer         { cursor: pointer; }
-     .progress        { cursor: progress; }
-     .wait            { cursor: wait; }
-     .crosshair       { cursor: crosshair; }
-     .text            { cursor: text; }
-     .move            { cursor: move; }
-     .not-allowed     { cursor: not-allowed; }
-     .s-resize        { cursor: s-resize; }
-     .w-resize        { cursor: w-resize; }
-     .nesw-resize     { cursor: nesw-resize; }
-     .nwse-resize     { cursor: nwse-resize; }
-
-     body {
-          text-align: center;
-          letter-spacing: -0.025rem;
-     }
-     .wrap{
-          margin: 50px 50px;
-          
-     }
-
-     .cursors {
-          display: flex;
-          flex-wrap: wrap;
-     }
-     .cursors > div {
-          flex: 150px;
-          padding: 40px 20px;
-          white-space: nowrap;
-          border: 1px solid #eee;
-          border-radius: 5px;
-          margin: 0 5px 5px 0;
-     }
-     .cursors > div:hover {
-          background: #eee;
-     }
-     .kr{
-          font-weight: bold;
-          font-size: 1.3rem;
-     }
-     img{
-          margin: 20px 0px;
-          width: 50%;
-     }
-     .logo .dl{
-          line-height: 50px;
-     }
-     .logo a{
-          line-height: 30px;
-     }
-     .logo img{
-          width: 100px;
-          display: inline-block;
-          vertical-align: bottom;
-     }
-     .wrap > h1 span{
-          font-size: 15px;
-          vertical-align: middle;
-     }
-     .dl{
-          font-size: 1.6rem;
-          font-weight: bold;
-     }
-     a{
-          text-decoration: none;
-          color: #222;
-     }
-</style>
 
 <body>
      <div class="wrap">
           <h1>DreamCatcher's Mongmong(몽몽) Cursor <span>By.Dm</span></h1>
           <div class="cursors">
-               <div class="default">1.Nomal Select<br><span class="kr">일반 선택</span><br><img src="img/1.Nomal Select_일반선택.png"></div>
-               <div class="help">2.Help Select<br><span class="kr">도움말 선택</span><br><img src="img/2.Help Select_도움말선택.png"></div>
-               <div class="progress">3.Working In Background<br><span class="kr">백그라운드 작업</span><br><img src="img/3.Working In Background_백그라운드 작업.gif"></div>
-               <div class="wait">4.Busy<br><span class="kr">사용 중</span><br><img src="img/4.Busy_사용 중.gif"></div>
-               <div class="crosshair">5.Precision Select<br><span class="kr">정밀도 선택</span><br><img src="img/5.Precision Select_정밀도 선택.png"> </div>
-               <div class="text">6.Text Select<br><span class="kr">텍스트 선택</span><br><img src="img/6.Text Select_텍스트선택(중심점-Y축만_35).png"></div>
-               <div class="not-allowed">7.Unavailable<br><span class="kr">사용할 수 없음</span><br><img src="img/7.Unavailable_사용할 수 없음.png"></div>
-               <div class="s-resize">8.Vertical Resize<br><span class="kr">수직 크기 조절</span><br><img src="img/8.Vertical Resize_수직 크기 조절.png"></div>
-               <div class="w-resize">9.Horizontal Resize<br><span class="kr">수평 크기 조절</span><br><img src="img/9.Horizontal Resize_수평 크기 조절.png"></div>
-               <div class="nwse-resize">10.Diagonal Resize1<br><span class="kr">대각선 방향 크기 조절1</span><br><img src="img/10.Diagonal Resize1_대각선 방향 크기 조절1.png"></div>
-               <div class="nesw-resize">11.Diagonal Resize2<br><span class="kr">대각선 방향 크기 조절2</span><br><img src="img/11.Diagonal Resize2_대각선 방향 크기 조절2.png"></div>
-               <div class="move">12.Move<br><span class="kr">이동</span><br><img src="img/12.Move_이동.png"></div>
-               <div class="pointer">13.Link Select<br><span class="kr">연결 선택</span><br><img src="img/13.Link Select_연결 선택.png"></div>
+               <div class="basic">1.Nomal Select<br><span class="kr">일반 선택</span><br><img
+                         src="img/preview/1.Nomal Select_일반선택.png"></div>
+               <div class="help">2.Help Select<br><span class="kr">도움말 선택</span><br><img
+                         src="img/preview/2.Help Select_도움말선택.png"></div>
+               <div class="progress">3.Working In Background<br><span class="kr">백그라운드 작업</span><br><img
+                         src="img/preview/3.Working In Background_백그라운드 작업.gif"></div>
+               <div class="wait">4.Busy<br><span class="kr">사용 중</span><br><img src="img/preview/4.Busy_사용 중.gif"></div>
+               <div class="crosshair">5.Precision Select<br><span class="kr">정밀도 선택</span><br><img
+                         src="img/preview/5.Precision Select_정밀도 선택.png"> </div>
+               <div class="text">6.Text Select<br><span class="kr">텍스트 선택</span><br><img
+                         src="img/preview/6.Text Select_텍스트선택(중심점-Y축만_35).png"></div>
+               <div class="not-allowed">7.Unavailable<br><span class="kr">사용할 수 없음</span><br><img
+                         src="img/preview/7.Unavailable_사용할 수 없음.png"></div>
+               <div class="s-resize">8.Vertical Resize<br><span class="kr">수직 크기 조절</span><br><img
+                         src="img/preview/8.Vertical Resize_수직 크기 조절.png"></div>
+               <div class="w-resize">9.Horizontal Resize<br><span class="kr">수평 크기 조절</span><br><img
+                         src="img/preview/9.Horizontal Resize_수평 크기 조절.png"></div>
+               <div class="nwse-resize">10.Diagonal Resize1<br><span class="kr">대각선 방향 크기 조절1</span><br><img
+                         src="img/preview/10.Diagonal Resize1_대각선 방향 크기 조절1.png"></div>
+               <div class="nesw-resize">11.Diagonal Resize2<br><span class="kr">대각선 방향 크기 조절2</span><br><img
+                         src="img/preview/11.Diagonal Resize2_대각선 방향 크기 조절2.png"></div>
+               <div class="move">12.Move<br><span class="kr">이동</span><br><img src="img/preview/12.Move_이동.png"></div>
+               <div class="pointer">13.Link Select<br><span class="kr">연결 선택</span><br><img
+                         src="img/preview/13.Link Select_연결 선택.png"></div>
           </div>
      </div>
-          <div class="logo">
-               <img src="img/Dm.PNG">
-               <br><a class="dl" href="https://drive.google.com/drive/folders/1-dmpXEg7i6fdRyH6cqV3w3xAPvzAUW4-?usp=sharing" target="blank">💖Cursor Download-커서받기💖</a>
-               <br><a href="https://www.instagram.com/dingga_dm/" target="blank">💜Dm's Instagram💜</a>
-               <br><a href="https://youtu.be/Az-_84HicSM" target="blank">🎸Dm's BEcause Guitar Cover Youtube🎸</a>
-               <br><a href="https://whdldi.github.io/dreamcatcher_summerholiday_hp/index.html#" target="blank">🌐Dm's
-                    Dreamcatcher:Summmer Holiday Homepage🌐</a>
-          </div>
+     <div class="logo">
+          <img src="img/Dm.PNG">
+          <br><a class="dl" href="https://drive.google.com/drive/folders/1-dmpXEg7i6fdRyH6cqV3w3xAPvzAUW4-?usp=sharing"
+               target="blank">💖Cursor Download-커서받기💖</a>
+          <br><a href="https://www.instagram.com/dingga_dm/" target="blank">💜Dm's Instagram💜</a>
+          <br><a href="https://youtu.be/Az-_84HicSM" target="blank">🎸Dm's BEcause Guitar Cover Youtube🎸</a>
+          <br><a href="https://whdldi.github.io/dreamcatcher_summerholiday_hp/index.html#" target="blank">🌐Dm's
+               Dreamcatcher:Summmer Holiday Homepage🌐</a>
      </div>
+     </div>
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+
+     <script>
+          // |￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣|
+          //     cursor change
+          // |＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿|
+          //    \ (•◡•) /
+          $(document).ready(function () {
+               $(".basic").hover(
+                    function () {
+                         $("html").css("cursor", "url('img/1.Nomal Select_일반선택.png'), default");
+                         $(this).css("pointer-events", "auto");
+
+                    },
+                    function () {
+                         $("html").css("cursor", "url('img/1.Nomal Select_일반선택.png'), default");
+                         /* 기본 커서로 변경 */
+                    }
+               );
+
+               $(".help").hover(
+                    function () {
+                         $("html").css("cursor", "url('img/2.Help Select_도움말선택.png'), help");
+                         $(this).css("pointer-events", "auto");
+                    },
+                    function () {
+                         $("html").css("cursor", "url('img/1.Nomal Select_일반선택.png'), default");
+                         /* 기본 커서로 변경 */
+                    }
+               );
+
+               $(".progress").hover(
+                    function () {
+                         $("html").css("cursor",
+                              "url('img/3.Working In Background_백그라운드 작업.gif'), progress");
+                         $(this).css("pointer-events", "auto");
+                    },
+                    function () {
+                         $("html").css("cursor", "url('img/1.Nomal Select_일반선택.png'), default");
+                         /* 기본 커서로 변경 */
+                    }
+               );
+
+               $(".wait").hover(
+                    function () {
+                         $("html").css("cursor", "url('img/4.Busy_사용 중.gif'), wait");
+                         $(this).css("pointer-events", "auto");
+                    },
+                    function () {
+                         $("html").css("cursor", "url('img/1.Nomal Select_일반선택.png'), default");
+                         /* 기본 커서로 변경 */
+                    }
+               );
+
+               $(".crosshair").hover(
+                    function () {
+                         $("html").css("cursor", "url('img/5.Precision Select_정밀도 선택.png'), crosshair");
+                         $(this).css("pointer-events", "auto");
+                    },
+                    function () {
+                         $("html").css("cursor", "url('img/1.Nomal Select_일반선택.png'), default");
+                         /* 기본 커서로 변경 */
+                    }
+               );
+
+               $(".text").hover(
+                    function () {
+                         $("html").css("cursor", "url('img/6.Text Select_텍스트선택(중심점-Y축만_35).png'), text");
+                         $(this).css("pointer-events", "auto");
+                    },
+                    function () {
+                         $("html").css("cursor", "url('img/1.Nomal Select_일반선택.png'), default");
+                         /* 기본 커서로 변경 */
+                    }
+               );
+
+               $(".not-allowed").hover(
+                    function () {
+                         $("html").css("cursor", "url('img/7.Unavailable_사용할 수 없음.png'), not-allowed");
+                         $(this).css("pointer-events", "auto");
+                    },
+                    function () {
+                         $("html").css("cursor", "url('img/1.Nomal Select_일반선택.png'), default");
+                         /* 기본 커서로 변경 */
+                    }
+               );
+
+               $(".s-resize").hover(
+                    function () {
+                         $("html").css("cursor", "url('img/8.Vertical Resize_수직 크기 조절.png'), s-resize");
+                           $(this).css("pointer-events", "auto");
+                    },
+                    function () {
+                         $("html").css("cursor", "url('img/1.Nomal Select_일반선택.png'), default");
+                         /* 기본 커서로 변경 */
+                    }
+               );
+
+               $(".w-resize").hover(
+                    function () {
+                         $("html").css("cursor",
+                              "url('img/9.Horizontal Resize_수평 크기 조절.png'), w-resize");
+                                $(this).css("pointer-events", "auto");
+                    },
+                    function () {
+                         $("html").css("cursor", "url('img/1.Nomal Select_일반선택.png'), default");
+                         /* 기본 커서로 변경 */
+                    }
+               );
+
+               $(".nwse-resize").hover(
+                    function () {
+                         $("html").css("cursor",
+                              "url('img/10.Diagonal Resize1_대각선 방향 크기 조절1.png'), nesw-resize");
+                              $(this).css("pointer-events", "auto");
+                    },
+                    function () {
+                         $("html").css("cursor", "url('img/1.Nomal Select_일반선택.png'), default");
+                         /* 기본 커서로 변경 */
+                    }
+               );
+
+               $(".nesw-resize").hover(
+                    function () {
+                         $("html").css("cursor",
+                              "url('img/11.Diagonal Resize2_대각선 방향 크기 조절2.png'), nwse-resize");
+                              $(this).css("pointer-events", "auto");
+                    },
+                    function () {
+                         $("html").css("cursor", "url('img/1.Nomal Select_일반선택.png'), default");
+                         /* 기본 커서로 변경 */
+                    }
+               );
+
+               $(".move").hover(
+                    function () {
+                         $("html").css("cursor", "url('img/12.Move_이동.png'), move");
+                         $(this).css("pointer-events", "auto");
+                    },
+                    function () {
+                         $("html").css("cursor", "url('img/1.Nomal Select_일반선택.png'), default");
+                         /* 기본 커서로 변경 */
+                    }
+               );
+
+               $(".pointer").hover(
+                    function () {
+                         $("html").css("cursor", "url('img/13.Link Select_연결 선택.png'), pointer");
+                         $(this).css("pointer-events", "auto");
+                    },
+                    function () {
+                         $("html").css("cursor", "url('img/1.Nomal Select_일반선택.png'), default");
+                         /* 기본 커서로 변경 */
+                    }
+               );
+
+
+          });
+
+          // $("li").hover(
+          //                function () {
+          //                     $("html").css("cursor",
+          //                          "url('img/pointer.png'), pointer"
+          //                     ); /* pointer 상태일 때 이미지 설정 */
+          //                },
+          //                function () {
+          //                     $("html").css("cursor",
+          //                          "url('img/default.png'), default"
+          //                     ); /* default 상태일 때 이미지 설정 */
+          //                }
+          //           );
+                    
+     </script>
 </body>
 
 </html>
